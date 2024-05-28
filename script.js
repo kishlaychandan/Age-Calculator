@@ -59,16 +59,16 @@ btn.addEventListener("click",()=>{
         section2.style.color="green";
     }
 
-    fetch(`http://numbersapi.com/${dobmm}/${dobdd}/date`)
-        .then(response => response.text())
-        .then(data => {
-            fact.innerText = data;
-            console.log(data);
-        })
-        .catch(error => {
-            fact.innerText = "Sorry, we couldn't fetch a fun fact.";
-            console.error('Error fetching the fun fact:', error);
-        });
+    // fetch(`http://numbersapi.com/${dobmm}/${dobdd}/date`)
+    //     .then(response => response.text())
+    //     .then(data => {
+    //         fact.innerText = data;
+    //         console.log(data);
+    //     })
+    //     .catch(error => {
+    //         fact.innerText = "Sorry, we couldn't fetch a fun fact.";
+    //         console.error('Error fetching the fun fact:', error);
+    //     });
     
 });
 let colors=["#fedcba","#ffbf00","#0000ff","#3f3fff","#abcdef"
