@@ -9,12 +9,14 @@ body{
     align-items: center;
     background: url(background.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    height: 100vh;
+    
     /* background-position: center; */
-    /* border-radius: 0.5rem; */
+    background-color: red;
 }
 .main{
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
     display: flex;
     padding: 3rem;
     flex-direction: column;
@@ -22,6 +24,7 @@ body{
     align-items: center;
     border-radius: 15rem;
     gap: 2rem;
+    flex-wrap: wrap;
     background-color: violet;
 }
 
@@ -31,6 +34,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    flex-wrap: wrap;
     /* background-color: white; */
 }
 .section1>input,button{
@@ -56,6 +60,7 @@ body{
     align-items: center;
     gap: 2rem;
     color: rgb(24, 168, 10);
+    flex-wrap: wrap;
 }
 
 .section2>div{
@@ -69,5 +74,6 @@ body{
     margin: 1rem;
     border-radius: 1.3rem;
     border: 2px solid aquamarine;
+    /* flex-wrap: wrap; */
 
 }
