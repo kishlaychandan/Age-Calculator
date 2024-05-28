@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    /* border-radius: 0.5rem; */
+}
+.main{
+    margin-top: 10rem;
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15rem;
+    gap: 2rem;
+    background-color: violet;
+}
+
+.section1{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: white; */
+}
+.section1>input,button{
+    background-color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid aquamarine;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.section1>button:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+    border: 2px solid aquamarine;
+    color: white;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: rgb(24, 168, 10);
+}
+
+.section2>div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 1.5rem; 
+    margin: 1rem;
+    border-radius: 1.3rem;
+    border: 2px solid aquamarine;
+
+}
