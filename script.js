@@ -5,7 +5,8 @@ let year=document.querySelector(".year");
 let month=document.querySelector(".month");
 let day=document.querySelector(".day");
 let section2=document.querySelector(".section2");
-
+let factTitle = document.querySelector(".fact-title");
+let fact = document.querySelector(".fact");
 // console.log(day.textContent);
 // console.log(main,dateinput,btn,year,day.innerText,month);
 
@@ -57,6 +58,17 @@ btn.addEventListener("click",()=>{
         console.log(year.innerText);
         section2.style.color="green";
     }
+
+    fetch(`http://numbersapi.com/${dobmm}/${dobdd}/date`)
+        .then(response => response.text())
+        .then(data => {
+            fact.innerText = data;
+            console.log(data);
+        })
+        .catch(error => {
+            fact.innerText = "Sorry, we couldn't fetch a fun fact.";
+            console.error('Error fetching the fun fact:', error);
+        });
     
 });
 let colors=["#fedcba","#ffbf00","#0000ff","#3f3fff","#abcdef"
@@ -67,5 +79,5 @@ setInterval(changebackground,1000);
 function changebackground(){
     let random=colors[Math.floor(Math.random()*colors.length)];
     main.style.backgroundColor=random;
-    main.style.transition="all 0.4s linear"
+    main.style.transition="all 0.5s linear"
 }

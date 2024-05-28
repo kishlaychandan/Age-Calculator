@@ -18,11 +18,11 @@ body{
 .main{
     /* margin-top: 10rem; */
     display: flex;
-    padding: 3rem;
+    padding: 4rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 15rem;
+    border-radius: 12rem;
     gap: 2rem;
     flex-wrap: wrap;
     background-color: violet;
@@ -60,7 +60,7 @@ body{
     align-items: center;
     gap: 2rem;
     color: rgb(24, 168, 10);
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .section2>div{
@@ -76,4 +76,43 @@ body{
     border: 2px solid aquamarine;
     /* flex-wrap: wrap; */
 
+}
+
+@media screen and (max-width:780px) {
+    :root{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:440px) {
+    :root{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:363px) {
+    :root{
+        font-size: 8px;
+    }
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 20rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: 2px solid aquamarine;
+    color: rgb(24, 168, 10);
+}
+.section3 .fact-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.section3 .fact {
+    font-size: 1.2rem;
+    text-align: center;
+    font-size: 1rem;
 }
